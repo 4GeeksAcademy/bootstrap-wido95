@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-1" href="#">
+                <i class="bi bi-instagram text-dark"></i>
+                <span class="text-dark">Instagram</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">
+                            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                              Create a new post
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h5 class="modal-title text-dark" id="staticBackdropLabel">Create a new post</h5>
+                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                <div class="modal-body text-dark">
+                                  <p>Caption:</p>
+                                  <div class="form-floating">
+                                    <textarea class="form-control text-secondary" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                                    <label for="floatingTextarea2">Add the caption of your post here</label>
+                                  </div>
+                                  <div class="d-grid gap-2 d-md-block mt-2">
+                                    <button class="btn btn-secondary" type="button"><i class="bi bi-camera-fill"></i></button>
+                                    <button class="btn btn-secondary type="button"><i class="bi bi-geo-alt-fill"></i></button>
+                                  </div>
+                                </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-success">Publish</button>
+                              </div>
+                            </div>
+                            </div>
+                            </div>
+                            
+                          </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <div class="dropdown">
+                            <a class="btn btn-ligth dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-gear-fill text-dark"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                              <li><a class="dropdown-item" href="#">Profile</a></li>
+                              <li><a class="dropdown-item" href="#">Accesibilty</a></li>
+                              <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+                            </ul>
+                          </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>    
+    <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active " id="pills-home-tab " data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true"><i class="bi bi-grid-3x3 text-dark"></i></button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link " id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false"><i class="bi bi-square-fill text-dark"></i></button>
+        </li>
+      </ul>
+      <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0"></div>
+        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-4 col-sm-6 mb-3"><img src="https://t2.uc.ltmcdn.com/es/posts/9/2/0/cuales_son_los_cuidados_de_un_border_collie_52029_orig.jpg" class="img-thumbnail size-grid-ga"></div>
+                  <div class="col-lg-4 col-sm-6 mb-3"><img src="https://cdn.conmebol.com/wp-content/uploads/2023/02/000_334T4YP.jpg" class="img-thumbnail size-grid-ga"></div>
+                  <div class="col-lg-4 col-sm-6 mb-3"><img src="https://media.traveler.es/photos/61375e56030de94d067fbe23/16:9/w_2560%2Cc_limit/224902.jpg" class="img-thumbnail size-grid-ga"></div>
+                  <div class="col-lg-4 col-sm-6 mb-3"><img src="https://www.lavanguardia.com/files/og_thumbnail/uploads/2017/05/15/5fa3c5d7ef234.jpeg" class="img-thumbnail size-grid-ga"></div>
+                  <div class="col-lg-4 col-sm-6 mb-3"><img src="https://estaticos-cdn.elperiodico.com/clip/d5e66f57-b108-4f6b-abcc-2d8d16bccc69_alta-libre-aspect-ratio_default_0.jpg" class="img-thumbnail size-grid-ga"></div>
+                  <div class="col-lg-4 col-sm-6 mb-3"><img src=" https://media.istockphoto.com/id/458091867/es/foto/scooter-rojo.jpg?s=612x612&w=0&k=20&c=8Rb6QlG1Xd74TDepbxLC7slzP8ft0wALOJ6fsPkmAcc=" class="img-thumbnail size-grid-ga"></div>
+                  <div class="col-lg-4 col-sm-6 mb-3"><img src=" https://previews.123rf.com/images/tanialerro/tanialerro1712/tanialerro171200004/91182634-vista-panor%C3%A1mica-de-la-ciudad-barroca-de-noto-sicilia-italia-europa.jpg" class="img-thumbnail size-grid-ga"></div>
+                  <div class="col-lg-4 col-sm-6 mb-3"><img src="https://api.time.com/wp-content/uploads/2023/03/Worlds-Greatest-Places-Barcelona-Spain.jpg" class="img-thumbnail size-grid-ga"></div>
+                  <div class="col-lg-4 col-sm-6 mb-3"><img src="https://www.infobae.com/new-resizer/tEPrGFPbDBCaRsCq4O6ckjHbOlY=/1200x900/filters:format(webp):quality(85)/cloudfront-us-east-1.images.arcpublishing.com/infobae/YLBYHRHKWJCLBLUXLI4NUBXBCM.jpg" class="img-thumbnail size-grid-ga"></div>
+          </div>
+          </div>
+      </div>
+        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+           <div class="row justify-content-center ">
+            <div class="card mb-3 col-sm-10 col-lg-6">
+              <div class="d-flex mt-2">
+               <h3 class="col-10">My crazy dog</h3>
+               <h8 class="col-2 text-end">17/6</h8>
+              </div>  
+                <img src="https://t2.uc.ltmcdn.com/es/posts/9/2/0/cuales_son_los_cuidados_de_un_border_collie_52029_orig.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h6 class="card-title"><i class="bi bi-heart"></i> 400</h6>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text"></p>
+                </div>
+            </div>
+              </div>
+              <div class="row justify-content-center ">
+                <div class="card mb-3 col-sm-10 col-lg-6">
+                  <div class="d-flex mt-2">
+                   <h3 class="col-10">Don't cry for my France</h3>
+                   <h8 class="col-2 text-end">17/6</h8>
+                  </div>  
+                    <img src="https://cdn.conmebol.com/wp-content/uploads/2023/02/000_334T4YP.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h6 class="card-title"><i class="bi bi-heart"></i> 2812</h6>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      <p class="card-text"></p>
+                    </div>
+                </div>
+                <div class="row justify-content-center ">
+                  <div class="card mb-3 col-sm-10 col-lg-6">
+                    <div class="d-flex mt-2">
+                     <h3 class="col-10">The pearl of Italy</h3>
+                     <h8 class="col-2 text-end">17/6</h8>
+                    </div>  
+                      <img src="https://media.traveler.es/photos/61375e56030de94d067fbe23/16:9/w_2560%2Cc_limit/224902.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h6 class="card-title"><i class="bi bi-heart"></i> 333</h6>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <p class="card-text"></p>
+                      </div>
+                  </div>
+                    </div>
+                    <div class="row justify-content-center ">
+                      <div class="card mb-3 col-sm-10 col-lg-6">
+                        <div class="d-flex mt-2">
+                         <h3 class="col-10">Rumors of Rome</h3>
+                         <h8 class="col-2 text-end">17/6</h8>
+                        </div>  
+                          <img src="https://www.lavanguardia.com/files/og_thumbnail/uploads/2017/05/15/5fa3c5d7ef234.jpeg" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h6 class="card-title"><i class="bi bi-heart"></i> 777</h6>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras pretium pretium blandit. Sed nec enim vitae velit convallis vestibulum at sit amet erat. Ut sit amet sapien magna. Sed turpis purus, auctor a ligula id, dignissim suscipit turpis. Duis a lectus ante. Praesent pharetra quis magna at eleifend. Nullam vel.</p>
+                            <p class="card-text"></p>
+                          </div>
+                      </div>
+                        </div>
+                        <div class="row justify-content-center ">
+                          <div class="card mb-3 col-sm-10 col-lg-6">
+                            <div class="d-flex mt-2">
+                             <h3 class="col-10">Triumvirate of the Rio de la Plata</h3>
+                             <h8 class="col-2 text-end">28/12</h8>
+                            </div>  
+                              <img src="https://estaticos-cdn.elperiodico.com/clip/d5e66f57-b108-4f6b-abcc-2d8d16bccc69_alta-libre-aspect-ratio_default_0.jpg" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                <h6 class="card-title"><i class="bi bi-heart"></i> 3544</h6>
+                                <p class="card-text">
+                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend, erat sed blandit aliquet, augue dolor pharetra nibh, eu egestas velit metus nec lectus. Integer ac pulvinar felis. Ut a porta augue. Aenean laoreet at elit vitae aliquam. In dapibus.</p>
+                                <p class="card-text"></p>
+                              </div>
+                          </div>
+                            </div>
+                            <div class="row justify-content-center ">
+                              <div class="card mb-3 col-sm-10 col-lg-6">
+                                <div class="d-flex mt-2">
+                                 <h3 class="col-10">Lost jewel of Italy</h3>
+                                 <h8 class="col-2 text-end">17/6</h8>
+                                </div>  
+                                  <img src="https://previews.123rf.com/images/tanialerro/tanialerro1712/tanialerro171200004/91182634-vista-panor%C3%A1mica-de-la-ciudad-barroca-de-noto-sicilia-italia-europa.jpg" class="card-img-top" alt="...">
+                                  <div class="card-body">
+                                    <h6 class="card-title"><i class="bi bi-heart"></i> 456</h6>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <p class="card-text"></p>
+                                  </div>
+                              </div>
+                                </div>
+                                <div class="row justify-content-center ">
+                                  <div class="card mb-3 col-sm-10 col-lg-6">
+                                    <div class="d-flex mt-2">
+                                     <h3 class="col-10">Best city in Europe</h3>
+                                     <h8 class="col-2 text-end">19/6</h8>
+                                    </div>  
+                                      <img src="https://api.time.com/wp-content/uploads/2023/03/Worlds-Greatest-Places-Barcelona-Spain.jpg" class="card-img-top" alt="...">
+                                      <div class="card-body">
+                                        <h6 class="card-title"><i class="bi bi-heart"></i> 837</h6>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                        <p class="card-text"></p>
+                                      </div>
+                                  </div>
+                                    </div>
+                                    <div class="row justify-content-center ">
+                                      <div class="card mb-3 col-sm-10 col-lg-6">
+                                        <div class="d-flex mt-2">
+                                         <h3 class="col-10">Rock and Roll</h3>
+                                         <h8 class="col-2 text-end">17/6</h8>
+                                        </div>  
+                                          <img src="https://www.infobae.com/new-resizer/tEPrGFPbDBCaRsCq4O6ckjHbOlY=/1200x900/filters:format(webp):quality(85)/cloudfront-us-east-1.images.arcpublishing.com/infobae/YLBYHRHKWJCLBLUXLI4NUBXBCM.jpg" class="card-img-top" alt="...">
+                                          <div class="card-body">
+                                            <h6 class="card-title"><i class="bi bi-heart"></i> 2345</h5>
+                                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                            <p class="card-text"></p>
+                                          </div>
+                                      </div>
+                                        </div>
+                                        <div class="row justify-content-center ">
+                                          <div class="card mb-3 col-sm-10 col-lg-6">
+                                            <div class="d-flex mt-2">
+                                             <h3 class="col-10">Nimbus 2000 Italiana</h3>
+                                             <h8 class="col-2 text-end">17/6</h8>
+                                            </div>  
+                                              <img src="https://media.istockphoto.com/id/458091867/es/foto/scooter-rojo.jpg?s=612x612&w=0&k=20&c=8Rb6QlG1Xd74TDepbxLC7slzP8ft0wALOJ6fsPkmAcc=" class="card-img-top" alt="...">
+                                              <div class="card-body">
+                                                <h6 class="card-title"><i class="bi bi-heart"></i> 2345</h6>
+                                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                                <p class="card-text"></p>
+                                              </div>
+                                          </div>
+                                            </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  </div>    
+              </div>
+            </div>
+            </div>
+      </div>
+      
+      
+
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+</body>
+</html>
